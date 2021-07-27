@@ -52,7 +52,15 @@ button{
     background: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    text-align: left;
+    position: relative;
 }
+
+.expand-cue{
+    position: absolute;
+    right: 5px;
+}   
 
 a{
     color: black;
@@ -80,4 +88,3 @@ li {
 li.menu-item{
     margin-left: 15px;
 }
-

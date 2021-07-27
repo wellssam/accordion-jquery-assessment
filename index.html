@@ -9,30 +9,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="./basic-favicon.ico"/>
     <title>Sam's Nifty Accordion Menu</title>
 </head>
 
 <body>
     <div class="wrapper">
         <nav>
-            <ul>
-                <li class="menu-title"><button>Shop <span class="expand-cue">+</span></button></li>
+            <ul id="shop-menu" 
+                aria-labelledby="shop-button">
+                <li class="menu-title">
+                    <button aria-expanded="false"
+                            aria-controls="shop-menu">
+                                Shop 
+                                <span class="expand-cue">
+                                    +
+                                </span>
+                    </button>
+                </li>
                 <li class="menu-description">Check out our featured items, browse categories, or head straight to our
                     trademark Leakproof bottoms.</li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Featured</a></li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Categories</a></li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Leakproof</a></li>
             </ul>
-            <ul>
-                <li class="menu-title"><button>About <span class="expand-cue">+</span></button></li>
+            <ul id="about-menu"
+                aria-labelledby="about-button">
+                <li class="menu-title">
+                    <button aria-expanded="false"
+                            aria-controls="about-menu">
+                                About 
+                                <span class="expand-cue">
+                                  +
+                                </span>
+                    </button>
+                </li>
                 <li class="menu-description">Learn more about what we do, our stores, and careers at Knix.</li>
                 <li class="menu-item start-hidden"><a href="" target="_self">About Us</a></li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Our Stores</a></li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Careers</a></li>
 
             </ul>
-            <ul>
-                <li class="menu-title"><button>Help <span class="expand-cue">+</span></button></li>
+            <ul id="help-menu"
+                aria-labelledby="help-button">
+                <li class="menu-title">
+                    <button aria-expanded="false"
+                            aria-controls="help-menu">
+                                Help 
+                                <span class="expand-cue">
+                                    +
+                                </span>
+                    </button>
+                </li>
                 <li class="menu-description">Take a look at sizing, book a virtual fitting, or get in touch!</li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Size Charts</a></li>
                 <li class="menu-item start-hidden"><a href="" target="_self">Book a Virtual Fitting</a></li>
